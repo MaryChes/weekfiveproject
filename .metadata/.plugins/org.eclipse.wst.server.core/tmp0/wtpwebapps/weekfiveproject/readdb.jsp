@@ -34,7 +34,7 @@
 
 <body class="full">
 	<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<nav style="background-color: #663300" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -67,9 +67,9 @@
 				<div class="row">
 					<div class="col-lg-12">
 					
-						<h1 style="background-color:white">Boot Camp Bakery Database</h1>
+						<h1>Boot Camp Bakery Database</h1>
 						
-						<table class="table table-bordered table-hover" style="background-color:white">
+						<table class="table table-hover" style="background-color:#bb9966">
 							<tr>
 								<th>Bakery ID</th>
 								<th>Item Type</th>
@@ -104,30 +104,7 @@
 			</div>
 		</div>
 	</div>
-	
-		
-							
-							
-							
-							
-							
-							
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 
