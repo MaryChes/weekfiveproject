@@ -52,7 +52,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href="readdb.jsp">View Database</a></li>
 				<li><a href="addtodb.html">Add Item</a></li>
-				<li><a href="deletefromdb.html">Delete Item</a></li>
+				<li><a href="deletefromdb.jsp">Delete Item</a></li>
 				<li><a href="updatedb.html">Update Item</a></li>
 				<li class="active"></li>
 			</ul>
