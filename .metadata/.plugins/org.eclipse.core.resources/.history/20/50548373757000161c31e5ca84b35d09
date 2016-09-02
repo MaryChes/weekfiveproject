@@ -1,0 +1,83 @@
+package com.weekfiveproject;
+
+import java.sql.*;
+import java.util.ArrayList;
+
+public class DAO 
+{
+	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/?user=root&autoReconnect=true&useSSL=false";
+	static final String USER = "root";
+	static final String PASSWORD = "root";
+	
+	public static ArrayList<Bakery> ourBakery = new ArrayList<>();
+	
+	static Connection CONN = null;
+	static Statement STMT = null;
+	static PreparedStatement PREP_STMT = null;
+	static ResultSet RES_SET = null;
+	
+	public static void connToDB() {
+
+		try {
+
+			Class.forName(JDBC_DRIVER);
+
+			System.out.println("Trying to connect to the DB...");
+			CONN = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+			System.out.println("Connected to DB.");
+
+		} catch (SQLException | ClassNotFoundException e) {
+			System.out.println("Connection failed");
+			e.printStackTrace();
+		}
+
+	}
+
+	public static void readFromDB() {
+
+		connToDB();
+
+		
+
+		try {
+
+			STMT = CONN.createStatement();
+			RES_SET = STMT.executeQuery("SELECT * FROM bakery.bakery;");
+
+			while (RES_SET.next()) {
+
+				Bakery itemInDB = new Bakery();
+
+				itemInDB.setBakeryID((RES_SET.getString("bakery_id")));
+				itemInDB.setType(RES_SET.getString("type"));
+				itemInDB.setCalories(RES_SET.getString("calories"));
+				itemInDB.setPrice(RES_SET.getString("price"));
+				itemInDB.setTopping(RES_SET.getString("topping"));
+
+				ourBakery.add(itemInDB);
+
+			}
+
+			for (Animal animal : ourZoo) {
+				System.out.println(animal);
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	} // read
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}//end class
