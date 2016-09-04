@@ -34,7 +34,7 @@ public class DAO
 			e.printStackTrace();
 		}
 
-	}
+	}//connect
 
 	public static void viewDB() 
 	{
@@ -125,9 +125,9 @@ public class DAO
 	
 	private static String modifyfromDB = "UPDATE `bakery`.`bakery`"
 			+ "SET"
-			+" calories= ?, price= ?, topping= ?"
+			+" type= ?, calories= ?, price= ?, topping= ?"
 			+ " WHERE "
-			+ "`type`"
+			+ "`bakery_id`"
 			+ "= ?";
 	
 	public static void updateToDB()
@@ -139,10 +139,11 @@ public class DAO
 		{
 			PREP_STMT = CONN.prepareStatement(modifyfromDB);
 			
-			PREP_STMT.setString(1, itemToModify.getCalories());
-			PREP_STMT.setString(2, itemToModify.getPrice());
-			PREP_STMT.setString(3, itemToModify.getTopping());
-			PREP_STMT.setString(4, itemToModify.getType());
+			PREP_STMT.setString(1, itemToModify.getType());
+			PREP_STMT.setString(2, itemToModify.getCalories());
+			PREP_STMT.setString(3, itemToModify.getPrice());
+			PREP_STMT.setString(4, itemToModify.getTopping());
+			PREP_STMT.setString(5, itemToModify.getBakeryID());
 			
 			PREP_STMT.executeUpdate();
 		}

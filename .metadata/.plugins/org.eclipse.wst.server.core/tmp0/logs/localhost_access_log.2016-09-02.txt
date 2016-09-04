@@ -248,3 +248,17 @@
 0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:48:19 -0400] "GET /weekfiveproject/addtodb.html HTTP/1.1" 200 3642
 0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:48:19 -0400] "GET /weekfiveproject/css/bootstrap.min.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [02/Sep/2016:15:48:19 -0400] "GET /weekfiveproject/css/full.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:35:55 -0400] "GET /weekfiveproject/deletefromdb.jsp HTTP/1.1" 200 6828
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:35:55 -0400] "GET /weekfiveproject/css/full.css HTTP/1.1" 200 1101
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:37:30 -0400] "GET /weekfiveproject/deletefromdb.jsp HTTP/1.1" 200 6828
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:37:30 -0400] "GET /weekfiveproject/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:37:30 -0400] "GET /weekfiveproject/css/full.css HTTP/1.1" 200 1127
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:46:13 -0400] "GET /weekfiveproject/deletefromdb.jsp HTTP/1.1" 200 6828
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:46:13 -0400] "GET /weekfiveproject/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:46:13 -0400] "GET /weekfiveproject/css/full.css HTTP/1.1" 200 1151
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:47:17 -0400] "GET /weekfiveproject/deletefromdb.jsp HTTP/1.1" 200 6843
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:47:17 -0400] "GET /weekfiveproject/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:47:18 -0400] "GET /weekfiveproject/css/full.css HTTP/1.1" 200 1128
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:49:13 -0400] "GET /weekfiveproject/deletefromdb.jsp HTTP/1.1" 200 6850
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:49:13 -0400] "GET /weekfiveproject/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Sep/2016:16:49:13 -0400] "GET /weekfiveproject/css/full.css HTTP/1.1" 304 -
